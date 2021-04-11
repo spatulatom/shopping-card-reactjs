@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+header{
+  background-image: url('./images/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.overlay{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+right: 0;
+bottom: 0;
+padding: 0 !important;
+margin: 0 !important;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+background-color: rgb(216, 205, 205);
+opacity: 0.001
+}
+nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+
+}
+nav li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+li a{
+  padding: 5px;
+  background-color: cornsilk;
+  text-decoration: none;
+}
+.cart ion-icon{
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+.cart a {
+  background-color: royalblue;
   color: white;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+ .container, .container-products{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   padding-bottom: 100px;
+ }
+ 
+ .image{
+  margin-right:20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+ .addToCart{
+   position: absolute;
+   width: 100%;
+   background-color: darkgray;
+   transition: all 0.3s ease-in-out;
+   opacity: 0;
+   cursor: pointer;
+   text-align: center;
+ }
+ .image:hover .cart1,
+ .image:hover .cart2,
+ .image:hover .cart3,
+ .image:hover .cart4{
+   bottom: 50px;
+   opacity: 1;
+   padding: 10px;
+   text-decoration: none;
+ }
+  /* ----Cart Page--- */
+  .container-products{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px
+;  }
+.container-products ion-icon{
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.product-title{
+  width: 45%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price{
+  width: 15%;
+  border-bottom: 1px solid lightslategray;
+  display: flex;
+  align-items: center;
+
 }
+
+.quantity{
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.total{
+  width: 10 %;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.product ion-icon {
+  cursor: pointer;
+}
+
+.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img{
+  width: 75px;
+}
+
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle{
+  width: 30%;
+}
+
+.basketTotal{
+  width: 10%;
+}
+ 
+@media(max-width: 500px){
+  nav h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .sm-hide{
+    display: none;
+  }
+
+.products,
+.product-header{
+  justify-content: center;
+}
+.basketTotalContainer{
+  padding-right: 8%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
