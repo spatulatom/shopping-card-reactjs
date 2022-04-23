@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/shopping-card/static/css/main.b18312cb.chunk.css",
-    "main.js": "/shopping-card/static/js/main.3941bb46.chunk.js",
-    "main.js.map": "/shopping-card/static/js/main.3941bb46.chunk.js.map",
-    "runtime-main.js": "/shopping-card/static/js/runtime-main.f872a415.js",
-    "runtime-main.js.map": "/shopping-card/static/js/runtime-main.f872a415.js.map",
-    "static/js/2.edb91771.chunk.js": "/shopping-card/static/js/2.edb91771.chunk.js",
-    "static/js/2.edb91771.chunk.js.map": "/shopping-card/static/js/2.edb91771.chunk.js.map",
-    "index.html": "/shopping-card/index.html",
-    "precache-manifest.76534ec12970ea25ca67af23351e1537.js": "/shopping-card/precache-manifest.76534ec12970ea25ca67af23351e1537.js",
-    "service-worker.js": "/shopping-card/service-worker.js",
-    "static/css/main.b18312cb.chunk.css.map": "/shopping-card/static/css/main.b18312cb.chunk.css.map",
-    "static/js/2.edb91771.chunk.js.LICENSE.txt": "/shopping-card/static/js/2.edb91771.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/shopping-card/static/media/cover.56c79d38.jpg"
+    "main.css": "/shopping-card-reactjs/static/css/main.ea1f4a8c.chunk.css",
+    "main.js": "/shopping-card-reactjs/static/js/main.b1a3f637.chunk.js",
+    "main.js.map": "/shopping-card-reactjs/static/js/main.b1a3f637.chunk.js.map",
+    "runtime-main.js": "/shopping-card-reactjs/static/js/runtime-main.2b95f154.js",
+    "runtime-main.js.map": "/shopping-card-reactjs/static/js/runtime-main.2b95f154.js.map",
+    "static/js/2.edb91771.chunk.js": "/shopping-card-reactjs/static/js/2.edb91771.chunk.js",
+    "static/js/2.edb91771.chunk.js.map": "/shopping-card-reactjs/static/js/2.edb91771.chunk.js.map",
+    "index.html": "/shopping-card-reactjs/index.html",
+    "precache-manifest.1c4248b34207ac15dd776a79fc27cdc2.js": "/shopping-card-reactjs/precache-manifest.1c4248b34207ac15dd776a79fc27cdc2.js",
+    "service-worker.js": "/shopping-card-reactjs/service-worker.js",
+    "static/css/main.ea1f4a8c.chunk.css.map": "/shopping-card-reactjs/static/css/main.ea1f4a8c.chunk.css.map",
+    "static/js/2.edb91771.chunk.js.LICENSE.txt": "/shopping-card-reactjs/static/js/2.edb91771.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/shopping-card-reactjs/static/media/cover.56c79d38.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f872a415.js",
+    "static/js/runtime-main.2b95f154.js",
     "static/js/2.edb91771.chunk.js",
-    "static/css/main.b18312cb.chunk.css",
-    "static/js/main.3941bb46.chunk.js"
+    "static/css/main.ea1f4a8c.chunk.css",
+    "static/js/main.b1a3f637.chunk.js"
   ]
 }
