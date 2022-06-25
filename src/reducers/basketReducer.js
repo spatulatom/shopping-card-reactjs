@@ -38,7 +38,7 @@ moonTshirt: {
 }
 }
  }
-export default (state=initialState,action) => {
+export default (state=initialState, action) => {
     let productSelected = "";
     switch (action.type){
         case ADD_PRODUCT_BASKET: 

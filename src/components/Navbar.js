@@ -9,16 +9,21 @@ function Navbar(props){
   useEffect(()=>{
     getNumbers()
   }, [])
-   return(
-    <header>
+
+
+return(
+  <header>
     <div className="overlay"></div>
     <nav>
-      <h2>Shop</h2>
+      <h2>Online Shopping</h2>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li className="cart"><Link to="/cart"><ion-icon name="basket-outline"></ion-icon>
-   Cart <span>{props.basketProps.basketNumbers}</span></Link></li>
+        <li className="cart">
+          <Link to="/cart">
+            <ion-icon name="basket-outline"></ion-icon>Basket <span>{props.basketProps.basketNumbers}</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   </header>
