@@ -41,42 +41,45 @@ moonTshirt: {
 export default (state=initialState, action) => {
     let productSelected = "";
     switch (action.type){
-        case ADD_PRODUCT_BASKET: 
-        productSelected = {...state.products[action.payload]}
-        productSelected.numbers +=1;
-        productSelected.inCart = true;
         
+            case ADD_PRODUCT_BASKET: 
+                productSelected = {...state.products[action.payload]}
+                productSelected.numbers +=1;
+                productSelected.inCart = true;
+            
 
 
-        return{
-            ...state,
-            basketNumbers: state.basketNumbers +1,
-            cartCost: state.cartCost + state.products[action.payload].price,
-            products: {
-                ...state.products,
-                [action.payload]: productSelected
+                return{
+                    ...state,
+                    basketNumbers: state.basketNumbers +1,
+                    cartCost: state.cartCost + state.products[action.payload].price,
+                    products: {
+                        ...state.products,
+                        [action.payload]: productSelected
+                    }
             }
-        }
-        case GET_NUMBERS_BASKET:
-            return{
-                ...state
-            }
+
+            case GET_NUMBERS_BASKET:
+                return{
+                    ...state
+                }
+
             case INCREASE_QUANTITY:
                 // if we click for balckTshirt we get: state.products['blackTshirt'], and acces to that object properties
                 productSelected= {...state.products[action.payload]}
                 productSelected.numbers+=1;
-            return{
+                return{
             
-                ...state, 
-                basketNumbers: state.basketNumbers + 1,
-                cartCost: state.cartCost + state.products[action.payload].price,
-                products: {
-                    ...state.products,
-                    // blackTshirt: productSelected-this is what the action.payload is doing when we click on for ex blackTshirt
-                    [action.payload]: productSelected
+                    ...state, 
+                    basketNumbers: state.basketNumbers + 1,
+                    cartCost: state.cartCost + state.products[action.payload].price,
+                    products: {
+                        ...state.products,
+                        // blackTshirt: productSelected-this is what the action.payload is doing when we click on for ex blackTshirt
+                        [action.payload]: productSelected
+                    }
                 }
-                
-            }
+
             case DECREASE_QUANTITY:
                 productSelected= {...state.products[action.payload]}
                 let newCartCost =0;
@@ -91,18 +94,18 @@ export default (state=initialState, action) => {
                 newCartCost= state.cartCost - state.products[action.payload].price;
                 newBasketNumbers = state.basketNumbers - 1
                 }
-            return{
+                return{
             
-                ...state, 
-                basketNumbers: state.basketNumbers -1,
-                cartCost: newCartCost,
-                products: {
-                    ...state.products,
-                    // blackTshirt: productSelected-this is what the action.payload is doing when we click on for ex blackTshirt
-                    [action.payload]: productSelected
+                    ...state, 
+                    basketNumbers: state.basketNumbers -1,
+                    cartCost: newCartCost,
+                    products: {
+                        ...state.products,
+                        // blackTshirt: productSelected-this is what the action.payload is doing when we click on for ex blackTshirt
+                        [action.payload]: productSelected
+                    }
                 }
-                
-            }
+
             case CLEAR_PRODUCT:
                 productSelected = {...state.products[action.payload]};
                 let numbersBackup = productSelected.numbers;
@@ -120,7 +123,7 @@ export default (state=initialState, action) => {
 
                 }
 
-                case SAVE_LOCAL_STORAGE:
+            case SAVE_LOCAL_STORAGE:
                   productSelected = action.payload;
                   
                  return{
@@ -128,10 +131,7 @@ export default (state=initialState, action) => {
                      basketNumbers: productSelected['basketNumbers'],
                      cartCost: productSelected['cartCost'],  
                      products: productSelected['products'],
-
-            
-                    
-                 }
+                    }
                     
         default:
             return state;
