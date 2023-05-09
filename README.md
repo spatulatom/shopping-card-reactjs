@@ -1,4 +1,4 @@
-See the deployed shopping card:  [Create React App](https://spatulatom.github.io/shopping-card-reactjs/#/).
+See the deployed shopping card:  [Deployed on GitHup Pages](https://spatulatom.github.io/shopping-card-reactjs/#/).
 
 ## Available Scripts
 
